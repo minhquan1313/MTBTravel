@@ -261,7 +261,7 @@ a {
     transform-origin: calc(100% - 3rem) -10px;
     transform: scale(0);
     opacity: 0;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
 @keyframes navBar__notify {
