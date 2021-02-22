@@ -1,0 +1,117 @@
+:root {
+    --background__color--primary1: #f3f6f8;
+    --background__color--like-white: #fff;
+    --header__heigh: 11.9rem;
+    --header__color--deg: 180deg;
+    --header__color--primary1: #5791fc;
+    --header__color--primary2: #aa93fe;
+    --header__color--primary3: #805dff;
+    --header__color--primary2_dark: #6c43ff;
+    --header__color--primaryMiddle1: #8192fd;
+    --header__color--primaryMiddle2: #00b8ff;
+    --notify__color--primary1: #e6eefe;
+    --text__color--primary: #464646;
+    --text__color--sub1: #f0f0f0;
+    --text__color--sub2: #dadada;
+    --text__color--sub3: #bdbdbd;
+    --text__color--sub4: #8b8b8b;
+    --grid__margin: calc(6px * 2);
+    --favorite-color: #721ff8;
+}
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+html {
+    /* font-family: "Roboto", sans-serif; */
+    font-size: 62.5%;
+    font-family: Helvetica, sans-serif;
+    color: (var(--text__color--primary));
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+.grid {
+    width: 120rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc((var(--grid__margin) / 2) * -1);
+    margin-right: calc((var(--grid__margin) / 2) * -1);
+}
+
+.grid__column2 {
+    padding-left: calc(var(--grid__margin) / 2);
+    padding-right: calc(var(--grid__margin) / 2);
+    width: calc(100% / 12 * 2);
+}
+
+.grid__column2-4 {
+    padding-left: calc(var(--grid__margin) / 2);
+    padding-right: calc(var(--grid__margin) / 2);
+    width: calc(100% / 10 * 2);
+}
+
+.grid__column10 {
+    padding-left: calc(var(--grid__margin) / 2);
+    padding-right: calc(var(--grid__margin) / 2);
+    width: calc(100% / 12 * 10);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Thanh cuon chuot---------------------------------------------------------------------------------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-button {
+    background-color: var(--header__color--primary1);
+    box-shadow: inset 0 0 4px rgba(255, 255, 255, 1);
+    display: none;
+}
+
+::-webkit-scrollbar-button:active {
+    background-color: var(--header__color--primaryMiddle2);
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 8px var(--text__color--sub2);
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+    /* box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.3); */
+    background-color: var(--header__color--primaryMiddle1);
+    background-image: -webkit-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.2) 75%,
+        transparent 75%,
+        transparent
+    );
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--header__color--primary2);
+}
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
