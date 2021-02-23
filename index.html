@@ -85,13 +85,13 @@
                         </li>
                         <li class="navBar__item common--no-border">
                             <!-- Account -->
-                            <div class="navBar__noAccount" style="display: null">
+                            <div class="navBar__noAccount" style="display: none">
                                 <a href="?" class="common--hover navBar__link navBar__signUp">Đăng Ký</a>
                                 <span class="navBar__line"></span>
                                 <a href="?" class="common--hover navBar__link navBar__signIn">Đăng Nhập</a>
                             </div>
 
-                            <div class="navBar__yesAccount" style="display: none">
+                            <div class="navBar__yesAccount" style="display: null">
                                 <div class="common--po__rel show--yesAccount__popup">
                                     <div class="common--hover common--po__rel common--flex-box yesAccount__box">
                                         <div class="yesAccount__avatar">
@@ -350,7 +350,7 @@
 
                         <div class="common--po__abs navBar__notify shoppingCart__noti">
                             <!-- No item in cart -->
-                            <div class="shoppingCart__noti--noItem" style="display: null">
+                            <div class="shoppingCart__noti--noItem" style="display: none">
                                 <div class="common--flex-box noItem__container">
                                     <div class="noItem__img-box">
                                         <img src="./assets/img/header/emptyCart.png" alt="" class="noItem_img" />
@@ -360,9 +360,39 @@
                             </div>
 
                             <!-- There is item in cart -->
-                            <div class="shoppingCart__noti--yesItem" style="display: none">
+                            <div class="shoppingCart__noti--yesItem" style="display: null">
                                 <div class="navBar__notify-header yesItem__header">Sản Phẩm Mới Thêm</div>
                                 <ul class="yesItem__list">
+                                    <li class="common--flex-box navBar__notify-item yesItem__item">
+                                        <img src="./assets/img/cart/p1.jpg" alt="" class="yesItem__img" />
+                                        <div class="navBar__notify-title yesItem__desc">Chó Husky siêu ngáo cute</div>
+                                        <div class="navBar__notify-title yesItem__price">5.000.000</div>
+                                    </li>
+                                    <li class="common--flex-box navBar__notify-item yesItem__item">
+                                        <img src="./assets/img/cart/p2.jpg" alt="" class="yesItem__img" />
+                                        <div class="navBar__notify-title yesItem__desc">Chó Husky siêu ngáo cute</div>
+                                        <div class="navBar__notify-title yesItem__price">5.000.000</div>
+                                    </li>
+                                    <li class="common--flex-box navBar__notify-item yesItem__item">
+                                        <img src="./assets/img/cart/p3.jpg" alt="" class="yesItem__img" />
+                                        <div class="navBar__notify-title yesItem__desc">Chó Husky siêu ngáo cute</div>
+                                        <div class="navBar__notify-title yesItem__price">5.000.000</div>
+                                    </li>
+                                    <li class="common--flex-box navBar__notify-item yesItem__item">
+                                        <img src="./assets/img/cart/p1.jpg" alt="" class="yesItem__img" />
+                                        <div class="navBar__notify-title yesItem__desc">Chó Husky siêu ngáo cute</div>
+                                        <div class="navBar__notify-title yesItem__price">5.000.000</div>
+                                    </li>
+                                    <li class="common--flex-box navBar__notify-item yesItem__item">
+                                        <img src="./assets/img/cart/p2.jpg" alt="" class="yesItem__img" />
+                                        <div class="navBar__notify-title yesItem__desc">Chó Husky siêu ngáo cute</div>
+                                        <div class="navBar__notify-title yesItem__price">5.000.000</div>
+                                    </li>
+                                    <li class="common--flex-box navBar__notify-item yesItem__item">
+                                        <img src="./assets/img/cart/p3.jpg" alt="" class="yesItem__img" />
+                                        <div class="navBar__notify-title yesItem__desc">Chó Husky siêu ngáo cute</div>
+                                        <div class="navBar__notify-title yesItem__price">5.000.000</div>
+                                    </li>
                                     <li class="common--flex-box navBar__notify-item yesItem__item">
                                         <img src="./assets/img/cart/p1.jpg" alt="" class="yesItem__img" />
                                         <div class="navBar__notify-title yesItem__desc">Chó Husky siêu ngáo cute</div>
@@ -458,49 +488,121 @@
                                 <div class="grid__row">
                                     <!-- Product -->
                                     <div class="grid__column2-4">
-                                        <div class="">
-                                            <a href="?" class="home-product-item">
-                                                <div
-                                                    class="home-product-item__img"
-                                                    style="background-image: url(./assets/img/product/VinhHaLong.jpg)"
-                                                >
-                                                    <div class="home-product-item__name">Vịnh Hạ Long</div>
+                                        <a href="?" class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(./assets/img/product/VinhHaLong.jpg)">
+                                                <div class="home-product-item__name">Vịnh Hạ Long</div>
+                                            </div>
+                                            <div class="home-product-item__container">
+                                                <div class="home-product-item__price">
+                                                    <div class="home-product-item__like home-product-item__like--active">
+                                                        <i class="home-product-item__like-icon home-product-item__like-icon-no far fa-heart"></i>
+                                                        <i class="home-product-item__like-icon home-product-item__like-icon-yes fas fa-heart"> </i>
+                                                    </div>
+                                                    <span class="home-product-item__price-current">4.000.000đ</span>
                                                 </div>
-                                                <div class="home-product-item__container">
-                                                    <div class="home-product-item__price">
-                                                        <div class="home-product-item__like home-product-item__like--active">
-                                                            <i class="home-product-item__like-icon home-product-item__like-icon-no far fa-heart"></i>
-                                                            <i class="home-product-item__like-icon home-product-item__like-icon-yes fas fa-heart">
-                                                            </i>
-                                                        </div>
-                                                        <span class="home-product-item__price-current">4.000.000đ</span>
-                                                    </div>
-                                                    <div class="home-product-item__action">
-                                                        <div class="home-product-item__rating">
-                                                            <i
-                                                                class="home-product-item__rating-icon fas fa-star home-product-item__rating-icon--active"
-                                                            ></i>
-                                                            <i class="home-product-item__rating-icon fas fa-star"></i>
-                                                            <i class="home-product-item__rating-icon fas fa-star"></i>
-                                                            <i class="home-product-item__rating-icon fas fa-star"></i>
-                                                            <i class="home-product-item__rating-icon fas fa-star"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="home-product-item__origin">
-                                                        <div class="home-product-item__brand">Du lịch</div>
-                                                        <div class="home-product-item__origin-name">Việt Nam</div>
-                                                    </div>
-                                                    <div class="home-product-item__favorite">
-                                                        <i class="home-product-item__favorite-icon ti-check"></i>
-                                                        <div class="home-product-item__favorite-label">Yêu thích</div>
-                                                    </div>
-                                                    <div class="home-product-item__sale-off">
-                                                        <div class="home-product-item__sale-off-percent">10%</div>
-                                                        <div class="home-product-item__sale-off-lable">Giảm</div>
+                                                <div class="home-product-item__action">
+                                                    <div class="home-product-item__rating">
+                                                        <i
+                                                            class="home-product-item__rating-icon fas fa-star home-product-item__rating-icon--active"
+                                                        ></i>
+                                                        <i class="home-product-item__rating-icon fas fa-star"></i>
+                                                        <i class="home-product-item__rating-icon fas fa-star"></i>
+                                                        <i class="home-product-item__rating-icon fas fa-star"></i>
+                                                        <i class="home-product-item__rating-icon fas fa-star"></i>
                                                     </div>
                                                 </div>
-                                            </a>
-                                        </div>
+                                                <div class="home-product-item__origin">
+                                                    <div class="home-product-item__brand">Du lịch</div>
+                                                    <div class="home-product-item__origin-name">Việt Nam</div>
+                                                </div>
+                                                <div class="home-product-item__favorite">
+                                                    <i class="home-product-item__favorite-icon ti-check"></i>
+                                                    <div class="home-product-item__favorite-label">Yêu thích</div>
+                                                </div>
+                                                <div class="home-product-item__sale-off">
+                                                    <div class="home-product-item__sale-off-percent">10%</div>
+                                                    <div class="home-product-item__sale-off-lable">Giảm</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid__column2-4">
+                                        <a href="?" class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(./assets/img/product/VinhHaLong.jpg)">
+                                                <div class="home-product-item__name">Vịnh Hạ Long</div>
+                                            </div>
+                                            <div class="home-product-item__container">
+                                                <div class="home-product-item__price">
+                                                    <div class="home-product-item__like home-product-item__like--active">
+                                                        <i class="home-product-item__like-icon home-product-item__like-icon-no far fa-heart"></i>
+                                                        <i class="home-product-item__like-icon home-product-item__like-icon-yes fas fa-heart"> </i>
+                                                    </div>
+                                                    <span class="home-product-item__price-current">4.000.000đ</span>
+                                                </div>
+                                                <div class="home-product-item__action">
+                                                    <div class="home-product-item__rating">
+                                                        <i
+                                                            class="home-product-item__rating-icon fas fa-star home-product-item__rating-icon--active"
+                                                        ></i>
+                                                        <i class="home-product-item__rating-icon fas fa-star"></i>
+                                                        <i class="home-product-item__rating-icon fas fa-star"></i>
+                                                        <i class="home-product-item__rating-icon fas fa-star"></i>
+                                                        <i class="home-product-item__rating-icon fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-item__origin">
+                                                    <div class="home-product-item__brand">Du lịch</div>
+                                                    <div class="home-product-item__origin-name">Việt Nam</div>
+                                                </div>
+                                                <div class="home-product-item__favorite">
+                                                    <i class="home-product-item__favorite-icon ti-check"></i>
+                                                    <div class="home-product-item__favorite-label">Yêu thích</div>
+                                                </div>
+                                                <div class="home-product-item__sale-off">
+                                                    <div class="home-product-item__sale-off-percent">10%</div>
+                                                    <div class="home-product-item__sale-off-lable">Giảm</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid__column2-4">
+                                        <a href="?" class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(./assets/img/product/VinhHaLong.jpg)">
+                                                <div class="home-product-item__name">Vịnh Hạ Long</div>
+                                            </div>
+                                            <div class="home-product-item__container">
+                                                <div class="home-product-item__price">
+                                                    <div class="home-product-item__like home-product-item__like--active">
+                                                        <i class="home-product-item__like-icon home-product-item__like-icon-no far fa-heart"></i>
+                                                        <i class="home-product-item__like-icon home-product-item__like-icon-yes fas fa-heart"> </i>
+                                                    </div>
+                                                    <span class="home-product-item__price-current">4.000.000đ</span>
+                                                </div>
+                                                <div class="home-product-item__action">
+                                                    <div class="home-product-item__rating">
+                                                        <i
+                                                            class="home-product-item__rating-icon fas fa-star home-product-item__rating-icon--active"
+                                                        ></i>
+                                                        <i class="home-product-item__rating-icon fas fa-star"></i>
+                                                        <i class="home-product-item__rating-icon fas fa-star"></i>
+                                                        <i class="home-product-item__rating-icon fas fa-star"></i>
+                                                        <i class="home-product-item__rating-icon fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-item__origin">
+                                                    <div class="home-product-item__brand">Du lịch</div>
+                                                    <div class="home-product-item__origin-name">Việt Nam</div>
+                                                </div>
+                                                <div class="home-product-item__favorite">
+                                                    <i class="home-product-item__favorite-icon ti-check"></i>
+                                                    <div class="home-product-item__favorite-label">Yêu thích</div>
+                                                </div>
+                                                <div class="home-product-item__sale-off">
+                                                    <div class="home-product-item__sale-off-percent">10%</div>
+                                                    <div class="home-product-item__sale-off-lable">Giảm</div>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

@@ -10,11 +10,13 @@
     --header__color--primaryMiddle1: #8192fd;
     --header__color--primaryMiddle2: #00b8ff;
     --notify__color--primary1: #e6eefe;
+    --notify__color--primary2: #b0cafd;
     --text__color--primary: #464646;
     --text__color--sub1: #f0f0f0;
     --text__color--sub2: #dadada;
     --text__color--sub3: #bdbdbd;
     --text__color--sub4: #8b8b8b;
+    --favorite__color__primary1: #f51f1f;
     --grid__margin: calc(6px * 2);
     --favorite-color: #721ff8;
 }
@@ -66,6 +68,15 @@ html {
     padding-left: calc(var(--grid__margin) / 2);
     padding-right: calc(var(--grid__margin) / 2);
     width: calc(100% / 12 * 10);
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeIn {
