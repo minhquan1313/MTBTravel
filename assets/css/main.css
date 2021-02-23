@@ -127,6 +127,8 @@
 .common--btn--active {
     background-color: var(--header__color--primary3) !important;
     color: var(--background__color--like-white) !important;
+    cursor: default !important;
+    border: none !important;
 }
 
 .common--horizontal-dash {
@@ -828,7 +830,9 @@ a {
 }
 
 .yesItem__list {
-    max-height: 30rem;
+    height: 30rem;
+    max-height: calc(100vh - 24rem);
+    min-height: 6rem;
     overflow-y: scroll;
 }
 
@@ -933,6 +937,7 @@ a {
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
+    cursor: pointer;
 }
 
 .category__link:hover {
@@ -1365,6 +1370,10 @@ a {
     justify-content: center;
     align-items: center;
     margin: var(--grid__margin) 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .pagination__ul {
@@ -1378,21 +1387,25 @@ a {
     background-image: -webkit-linear-gradient(
         0deg,
         transparent 0%,
-        var(--background__color--like-white) 6%,
-        var(--background__color--like-white) 94%,
+        var(--background__color--like-white) 10%,
+        var(--background__color--like-white) 90%,
         transparent 100%
     );
 }
 .pagination__item {
-    /*background-color: #ccc;
-    */
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 3rem;
     width: 3rem;
-    align-items: center;
-    border: 1px solid currentColor;
-    transition: all 0.3s linear;
+    margin: 0 var(--grid__margin);
+    /* border: 1px solid currentColor; */
+    cursor: pointer;
+}
+
+.pagination__link,
+.pagination__item {
+    transition: all 0.2s linear;
 }
 
 .pagination__item--noHover {
@@ -1407,16 +1420,34 @@ a {
 }
 
 .pagination__item--active {
-    /* position: relative;
-    height: 4rem;
-    width: 4rem; */
-    background-color: #aaa;
     transform: rotate(45deg);
-    /* padding: 11rem; */
+    position: relative;
     margin: var(--grid__margin);
-    border-radius: 4px;
-    background-image: linear-gradient(45deg, var(--header__color--primary1), var(--header__color--primary2));
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: 3rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-height: 3rem;
+    cursor: default;
 }
+.pagination__item--active::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 10%;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    border: none;
+    background-image: linear-gradient(45deg, var(--header__color--primary1), var(--header__color--primary2));
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+/* ... */
 .pagination__item--active span,
 .pagination__item--active {
     transition: all 0.4s ease-out;
@@ -1424,6 +1455,7 @@ a {
 
 .pagination__item--active span {
     transform: rotate(-45deg);
+    position: relative;
     color: var(--background__color--like-white);
 }
 
@@ -1434,7 +1466,6 @@ a {
 .pagination__item--active:hover span {
     transform: rotate(-225deg);
 }
-/* ... */
 
 .pagination__link:hover {
     color: var(--text__color--primary);
@@ -1449,7 +1480,6 @@ a {
     margin: auto;
     color: var(--text__color--sub4);
     font-size: 1.5rem;
-    transition: all 0.3s linear;
 }
 
 .pagination__link span {
@@ -1676,4 +1706,5 @@ a {
 }
 
 .signUp-In-form__sub-input-link {
+}
 }
