@@ -1355,13 +1355,13 @@ a {
     transition: all 0.2s linear;
 }
 
-.pagination__item:not(.pagination__item--noHover, .pagination__item--active, .pagination__item--disabled):hover {
+.pagination__item:not(.pagination__item--active, .pagination__item--disabled):hover {
     background-color: var(--notify__color--primary1);
     border-radius: 100%;
 }
 
 .pagination__item--disabled {
-    cursor: not-allowed;
+    cursor: default;
 }
 
 .pagination__item--active::before {
@@ -1397,7 +1397,7 @@ a {
     transform: rotate(-225deg);
 }
 
-.pagination__item:not(.pagination__item--noHover, .pagination__item--disabled):hover .pagination__link {
+.pagination__item:not(.pagination__item--disabled):hover .pagination__link {
     color: var(--text__color--primary);
 }
 
@@ -1423,12 +1423,6 @@ a {
     margin: var(--grid__margin);
     min-width: 3rem;
     min-height: 3rem;
-    cursor: default;
-}
-
-.pagination__item--noHover {
-    border: none;
-    color: var(--text__color--sub4);
     cursor: default;
 }
 /* -------------------------------------------------------------------------------------------------------------------------------------------- */
