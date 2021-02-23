@@ -1,5 +1,7 @@
 :root {
-    --background__color--primary1: #f3f6f8;
+    /* --background__color--primary1: #f3f6f8; */
+    --background__color--primary1: #359ee4;
+    --background__color--primary1: #f1f1f6;
     --background__color--like-white: #fff;
     --header__heigh: 11.9rem;
     --header__color--deg: 180deg;
