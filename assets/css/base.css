@@ -64,6 +64,8 @@ html {
     padding-left: calc(var(--grid__margin) / 2);
     padding-right: calc(var(--grid__margin) / 2);
     width: calc(100% / 10 * 2);
+    /* margin: auto; */
+    /* justify-content: center; */
 }
 
 .grid__column10 {
